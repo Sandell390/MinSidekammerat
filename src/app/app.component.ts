@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Init } from './interfaces/init';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'MinSidekammerat';
+  init: Init;
+
+  constructor(){
+    this.init = {id: 0, name: 'MinSidekammerat'};
+  }
+
+  HelloWold(init: Init){
+    
+  }
 }
